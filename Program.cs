@@ -43,6 +43,9 @@ app.UseSwaggerUI(options =>
 // 啟用 HTTPS 強制跳轉（如果應用程式使用 HTTPS）
 // app.UseHttpsRedirection();
 
+// 使用 CORS（要放在 `UseAuthorization()` 之前）
+app.UseCors("AllowSpecificOrigin");
+
 // 啟用授權中介軟體（此時並未真正啟用認證機制，只是預留）
 app.UseAuthorization();
 
