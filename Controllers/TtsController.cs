@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using taiwanese_translator_api.Models;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace taiwanese_translator_api.Controllers
 {

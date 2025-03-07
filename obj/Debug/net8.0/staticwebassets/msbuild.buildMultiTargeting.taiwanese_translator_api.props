@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/taiwanese_translator_api.props" />
+</Project>
