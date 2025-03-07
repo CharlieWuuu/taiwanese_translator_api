@@ -3,6 +3,18 @@ using Microsoft.OpenApi.Models; // 引入 OpenAPI (Swagger) 的命名空間
 
 var builder = WebApplication.CreateBuilder(args); // 創建 Web 應用程式的建構器
 
+// 加入 CORS 允許前端請求
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173", "https://charliewuuu.github.io") // 允許前端 Vite
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 // 加入 Swagger 服務
 builder.Services.AddEndpointsApiExplorer(); // 讓 Minimal API 也能產生 OpenAPI 規格（即 Swagger 文件）
 builder.Services.AddSwaggerGen(options =>
