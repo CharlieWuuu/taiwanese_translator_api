@@ -15,5 +15,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /publish .
 
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
+
 # 5. 設定運行指令
 ENTRYPOINT ["dotnet", "taiwanese_translator_api.dll"]

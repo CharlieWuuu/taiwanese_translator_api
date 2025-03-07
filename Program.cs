@@ -29,7 +29,7 @@ app.UseSwaggerUI(options =>
 });
 
 // 啟用 HTTPS 強制跳轉（如果應用程式使用 HTTPS）
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 // 啟用授權中介軟體（此時並未真正啟用認證機制，只是預留）
 app.UseAuthorization();
