@@ -1,0 +1,25 @@
+# 忽略 bin & obj 資料夾（編譯後的檔案）
+bin/
+obj/
+
+# Docker 相關
+*.tar
+*.img
+*.container
+docker-compose.override.yml
+.dockerignore
+
+# NuGet 相關
+.nuget/
+*.nupkg
+project.lock.json
+
+# 使用者特定設定
+*.user
+*.suo
+*.vs/
+.vscode/
+
+# 日誌檔案
+logs/
+*.log
