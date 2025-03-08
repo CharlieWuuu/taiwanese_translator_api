@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("taiwanese_translator_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef895a1b2160f61a89babbf7e49c771721837f7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d769faa93a1f3df118ff9cb229702fc64e67758")]
 [assembly: System.Reflection.AssemblyProductAttribute("taiwanese_translator_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("taiwanese_translator_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigin",
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173", "https://charliewuuu.github.io") // 允許前端 Vite
+            policy.WithOrigins("http://localhost:5173", "https://charliewuuu.github.io", "https://taiwanese-translator.vercel.app") // 允許前端 Vite
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
